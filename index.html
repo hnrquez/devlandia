@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apenas maiores de 18</title>
+</head>
+<body>
+    <h1>Proibido para menores de 18 anos!</h1>
+    <form>
+        <p>Digite suas credenciais</p>
+        <input type="email" id="email" placeholder="email" required> <br>
+        <input type="password" id="senha" placeholder="senha" required> <br>
+        <input type="number" id="idade" placeholder="idade" required> <br>
+        <button type="button" value="entrar" onclick="verificar()">Entrar</button>
+    </form>
+    <script>
+        function verificar(){
+            var idade = document.getElementById('idade').value;
+               if(idade >= 18){
+                 window.alert('Usuario maior de idade, aproveite.');
+                 window.location.href="home.html";
+                 event.preventDefault();
+               } else{
+                  window.alert('usuario deve ser maior de 18 anos para acessar esse site.');
+               }
+        
+        }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            position: relative;
+            background-color:rgb(235, 206, 153); /* Cor de fundo opcional */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding-top: 6%;
+            background-color: rgba(236, 236, 236, 0.801);
+            height: 250px;
+            width: 250px;
+            font-size: large;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+            font-family: Arial, Helvetica, sans-serif;
+            lighting-color: black;
+            border-radius: 5%;
+           
+        }
+        h1{
+            text-align: center;
+        }
+        button{
+            background-color: rgb(33, 33, 241);
+            color: white;
+        
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgba(0, 17, 255, 0.651);
+        }
+        
+    </style>
+</body>
+</html>

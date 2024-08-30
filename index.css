@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-color:rgb(235, 206, 153); /* Cor de fundo opcional */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 6%;
+    background-color: rgba(236, 236, 236, 0.801);
+    height: 250px;
+    width: 250px;
+    font-size: large;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    font-family: Arial, Helvetica, sans-serif;
+    lighting-color: black;
+    border-radius: 5%;
+   
+}
+h1{
+    text-align: center;
+}
+button{
+    background-color: rgb(33, 33, 241);
+    color: white;
+
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 17, 255, 0.651);
+}
